@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 float_img = cv.imread('makeup/model.jpg')
-ref_img = cv.imread('makeup/sample.jpg')
+ref_img = cv.imread('makeup/makeup.jpg')
 
 akaze = cv.AKAZE_create()
 float_kp, float_des = akaze.detectAndCompute(float_img, None)
