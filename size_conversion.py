@@ -29,6 +29,5 @@ H, status = cv.findHomography(
 # 画像を変換
 warped_image = cv.warpPerspective(
     float_img, H, (ref_img.shape[1], ref_img.shape[0]))
-    #borderValue=(210, 210, 210)
 
-cv.imwrite('makeup/sample_size_conversion.jpg', warped_image)
+cv.imwrite('makeup/model_size_conversion.jpg', warped_image)
