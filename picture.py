@@ -12,7 +12,7 @@ while True:
     cv2.imshow('image', img)
     key = cv2.waitKey(1)
     if key == 32:   #スペース
-        cv2.imwrite('makeup/sample.jpg', img)
+        cv2.imwrite('makeup/makeup.jpg', img)
     if key == 27:   #escキー
         break
  
