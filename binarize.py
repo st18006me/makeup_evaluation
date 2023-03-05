@@ -32,7 +32,7 @@ white_area2=cv2.countNonZero(sabun_mask)
 # 結果を出力
 print('一致率:'+str(100-white_area2/white_area1*100)+'%')
 cv2.imwrite("makeup/red_mask_model.png", red_masked)
-cv2.imwrite("makeup/red_mask_sample.png", sabun_mask)
+cv2.imwrite("makeup/red_mask_makeup.png", sabun_mask)
 
 #画像の表示
 cv2.imshow("OpenCV_sample",red_mask)
