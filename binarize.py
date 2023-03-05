@@ -16,8 +16,8 @@ def detect_red_color(img):
     return mask_tehon, masked_img
 
   
-img2 = cv2.imread("makeup/model_difference.jpg")
-img1 = cv2.imread("makeup/sample_difference.jpg")
+img1 = cv2.imread("makeup/model_difference.jpg")
+img2 = cv2.imread("makeup/makeup_difference.jpg")
 
 # 色検出（赤、緑、青）
 red_mask, red_masked_img = detect_red_color_sabun(img1)
@@ -35,7 +35,7 @@ cv2.imwrite("makeup/red_mask_model.png", red_masked)
 cv2.imwrite("makeup/red_mask_makeup.png", sabun_mask)
 
 #画像の表示
-cv2.imshow("OpenCV_sample",red_mask)
+cv2.imshow("OpenCV_model",red_mask)
 cv2.imshow("OpenCV_makeup",sabun_mask)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
