@@ -3,7 +3,7 @@ from PIL import Image
 import sys
 
 # 画像の読み込み
-image1 = Image.open("makeup/sample.jpg")
+image1 = Image.open("makeup/makeup.jpg")
 image2 = Image.open("makeup/model_size_conversion.jpg")
 
 # RGB画像に変換
@@ -35,6 +35,6 @@ diff_u8 = diff_n_i16.astype(np.uint8)
 # PIL画像に変換
 diff_img = Image.fromarray(diff_u8)
 
-diff_img.save("makeup/model_difference.jpg")
+diff_img.save("makeup/makeup_difference.jpg")
 # 画像表示
 diff_img.show()
